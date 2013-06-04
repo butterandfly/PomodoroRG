@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA3A8962170AB025007D0004 /* graph_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8961170AB025007D0004 /* graph_bar@2x.png */; };
+		DA3A8964170AB03E007D0004 /* graph_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8963170AB03E007D0004 /* graph_bar.png */; };
+		DA3A8966170AE00D007D0004 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3A8965170AE00D007D0004 /* AudioToolbox.framework */; };
+		DA3A8968170AE13D007D0004 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3A8967170AE13D007D0004 /* AVFoundation.framework */; };
+		DA3A899A1712A215007D0004 /* RGAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A89991712A214007D0004 /* RGAssistant.m */; };
+		DA3A89F1171D1C8A007D0004 /* RGMemoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A89F0171D1C8A007D0004 /* RGMemoListController.m */; };
+		DA3A89FA171D5EDB007D0004 /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A89F9171D5EDB007D0004 /* Memo.m */; };
+		DA3A89FF171D9962007D0004 /* RGMemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A89FE171D9962007D0004 /* RGMemoController.m */; };
+		DA3A8A02171DB238007D0004 /* RGMemoMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A8A01171DB236007D0004 /* RGMemoMediator.m */; };
+		DA3A8A07171E8B6E007D0004 /* RGMissionMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A8A06171E8B6E007D0004 /* RGMissionMediator.m */; };
+		DA3A8A0D17202B4C007D0004 /* Tomatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA3A8A0A17202B4C007D0004 /* Tomatos.xcdatamodeld */; };
+		DA3A8A0F17202C95007D0004 /* speech_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8A0E17202C95007D0004 /* speech_bubble.png */; };
+		DA3A8A1117202CB5007D0004 /* speech_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8A1017202CB5007D0004 /* speech_bubble@2x.png */; };
+		DA806B351701576B00B3BB1E /* RGHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B341701576B00B3BB1E /* RGHistoryViewController.m */; };
+		DA806B381701592A00B3BB1E /* RGDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B371701592A00B3BB1E /* RGDataCenter.m */; };
+		DA806B41170572B500B3BB1E /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B40170572B400B3BB1E /* Date.m */; };
+		DA806B44170572B500B3BB1E /* Mission.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B43170572B500B3BB1E /* Mission.m */; };
+		DA806B471708035300B3BB1E /* RGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B461708035300B3BB1E /* RGTimerController.m */; };
+		DA8BEF4D16FF45DC00086FC6 /* RGMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BEF4C16FF45DC00086FC6 /* RGMissionViewController.m */; };
+		DA8BEF5016FFF4DC00086FC6 /* RGAddMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BEF4F16FFF4DC00086FC6 /* RGAddMissionViewController.m */; };
+		DA8BEF5216FFFC0900086FC6 /* deleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8BEF5116FFFC0900086FC6 /* deleteButton.png */; };
+		DA8BEF5417002DB600086FC6 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8BEF5317002DB500086FC6 /* pencil.png */; };
+		DA8BEF5617002DCE00086FC6 /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8BEF5517002DCE00086FC6 /* pencil@2x.png */; };
+		DA8C698616FF08A10000F2BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C698516FF08A10000F2BF /* UIKit.framework */; };
+		DA8C698816FF08A10000F2BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C698716FF08A10000F2BF /* Foundation.framework */; };
+		DA8C698A16FF08A10000F2BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C698916FF08A10000F2BF /* CoreGraphics.framework */; };
+		DA8C698C16FF08A10000F2BF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C698B16FF08A10000F2BF /* CoreData.framework */; };
+		DA8C699416FF08A10000F2BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C699316FF08A10000F2BF /* main.m */; };
+		DA8C699816FF08A20000F2BF /* RGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C699716FF08A20000F2BF /* RGAppDelegate.m */; };
+		DA8C699A16FF08A20000F2BF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8C699916FF08A20000F2BF /* Default.png */; };
+		DA8C699C16FF08A20000F2BF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8C699B16FF08A20000F2BF /* Default@2x.png */; };
+		DA8C699E16FF08A20000F2BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8C699D16FF08A20000F2BF /* Default-568h@2x.png */; };
+		DA8C69B016FF11960000F2BF /* RGMissionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C69AA16FF11960000F2BF /* RGMissionViewCell.m */; };
+		DA8C69B116FF11960000F2BF /* RGTodayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C69AC16FF11960000F2BF /* RGTodayTableViewController.m */; };
+		DA8E549E1747A8EE00B23336 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E549C1747A8EE00B23336 /* Icon.png */; };
+		DA8E549F1747A8EE00B23336 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E549D1747A8EE00B23336 /* Icon@2x.png */; };
+		DA8E550C17574F2300B23336 /* TStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E550B17574F2300B23336 /* TStoryboard.storyboard */; };
+		DA8E555A1757575F00B23336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA8E55581757575F00B23336 /* InfoPlist.strings */; };
+		DA8E555D1757577600B23336 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E555B1757577600B23336 /* Storyboard.storyboard */; };
+		DA9C265917087E1A00F94B0D /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA9C265817087E1A00F94B0D /* alarm.mp3 */; };
+		DA9C265B1708835400F94B0D /* alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA9C265A1708835400F94B0D /* alarm2.mp3 */; };
+		DA9C265D1709422900F94B0D /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9C265C1709422900F94B0D /* setting.plist */; };
+		DA9C266017095DC500F94B0D /* RGTomatoSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C265F17095DC500F94B0D /* RGTomatoSettingController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA3A8961170AB025007D0004 /* graph_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graph_bar@2x.png"; sourceTree = "<group>"; };
+		DA3A8963170AB03E007D0004 /* graph_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph_bar.png; sourceTree = "<group>"; };
+		DA3A8965170AE00D007D0004 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DA3A8967170AE13D007D0004 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DA3A89981712A214007D0004 /* RGAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAssistant.h; sourceTree = "<group>"; };
+		DA3A89991712A214007D0004 /* RGAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAssistant.m; sourceTree = "<group>"; };
+		DA3A89EF171D1C8A007D0004 /* RGMemoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMemoListController.h; sourceTree = "<group>"; };
+		DA3A89F0171D1C8A007D0004 /* RGMemoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMemoListController.m; sourceTree = "<group>"; };
+		DA3A89F8171D5EDA007D0004 /* Memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
+		DA3A89F9171D5EDB007D0004 /* Memo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
+		DA3A89FC171D6785007D0004 /* RGConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGConstant.h; sourceTree = "<group>"; };
+		DA3A89FD171D9962007D0004 /* RGMemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMemoController.h; sourceTree = "<group>"; };
+		DA3A89FE171D9962007D0004 /* RGMemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMemoController.m; sourceTree = "<group>"; };
+		DA3A8A00171DB236007D0004 /* RGMemoMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMemoMediator.h; sourceTree = "<group>"; };
+		DA3A8A01171DB236007D0004 /* RGMemoMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMemoMediator.m; sourceTree = "<group>"; };
+		DA3A8A05171E8B6D007D0004 /* RGMissionMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMissionMediator.h; sourceTree = "<group>"; };
+		DA3A8A06171E8B6E007D0004 /* RGMissionMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMissionMediator.m; sourceTree = "<group>"; };
+		DA3A8A0B17202B4C007D0004 /* Tomatos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tomatos.xcdatamodel; sourceTree = "<group>"; };
+		DA3A8A0C17202B4C007D0004 /* Tomatos1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tomatos1.0.xcdatamodel; sourceTree = "<group>"; };
+		DA3A8A0E17202C95007D0004 /* speech_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech_bubble.png; sourceTree = "<group>"; };
+		DA3A8A1017202CB5007D0004 /* speech_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech_bubble@2x.png"; sourceTree = "<group>"; };
+		DA806B331701576B00B3BB1E /* RGHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGHistoryViewController.h; sourceTree = "<group>"; };
+		DA806B341701576B00B3BB1E /* RGHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGHistoryViewController.m; sourceTree = "<group>"; };
+		DA806B361701592A00B3BB1E /* RGDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDataCenter.h; sourceTree = "<group>"; };
+		DA806B371701592A00B3BB1E /* RGDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDataCenter.m; sourceTree = "<group>"; };
+		DA806B3F170572B400B3BB1E /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
+		DA806B40170572B400B3BB1E /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
+		DA806B42170572B500B3BB1E /* Mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mission.h; sourceTree = "<group>"; };
+		DA806B43170572B500B3BB1E /* Mission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mission.m; sourceTree = "<group>"; };
+		DA806B451708035200B3BB1E /* RGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTimerController.h; sourceTree = "<group>"; };
+		DA806B461708035300B3BB1E /* RGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTimerController.m; sourceTree = "<group>"; };
+		DA8BEF4B16FF45DC00086FC6 /* RGMissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMissionViewController.h; sourceTree = "<group>"; };
+		DA8BEF4C16FF45DC00086FC6 /* RGMissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMissionViewController.m; sourceTree = "<group>"; };
+		DA8BEF4E16FFF4DC00086FC6 /* RGAddMissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAddMissionViewController.h; sourceTree = "<group>"; };
+		DA8BEF4F16FFF4DC00086FC6 /* RGAddMissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAddMissionViewController.m; sourceTree = "<group>"; };
+		DA8BEF5116FFFC0900086FC6 /* deleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteButton.png; sourceTree = "<group>"; };
+		DA8BEF5317002DB500086FC6 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		DA8BEF5517002DCE00086FC6 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
+		DA8C698216FF08A10000F2BF /* Tomatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8C698516FF08A10000F2BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA8C698716FF08A10000F2BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA8C698916FF08A10000F2BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA8C698B16FF08A10000F2BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA8C698F16FF08A10000F2BF /* Tomatos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tomatos-Info.plist"; sourceTree = "<group>"; };
+		DA8C699316FF08A10000F2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA8C699516FF08A10000F2BF /* Tomatos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomatos-Prefix.pch"; sourceTree = "<group>"; };
+		DA8C699616FF08A10000F2BF /* RGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppDelegate.h; sourceTree = "<group>"; };
+		DA8C699716FF08A20000F2BF /* RGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGAppDelegate.m; sourceTree = "<group>"; };
+		DA8C699916FF08A20000F2BF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DA8C699B16FF08A20000F2BF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DA8C699D16FF08A20000F2BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA8C69A916FF11960000F2BF /* RGMissionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMissionViewCell.h; sourceTree = "<group>"; };
+		DA8C69AA16FF11960000F2BF /* RGMissionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMissionViewCell.m; sourceTree = "<group>"; };
+		DA8C69AB16FF11960000F2BF /* RGTodayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTodayTableViewController.h; sourceTree = "<group>"; };
+		DA8C69AC16FF11960000F2BF /* RGTodayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTodayTableViewController.m; sourceTree = "<group>"; };
+		DA8E549C1747A8EE00B23336 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DA8E549D1747A8EE00B23336 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DA8E54A01747A8FC00B23336 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DA8E54A21747A90200B23336 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DA8E54AB1748A81D00B23336 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		DA8E54AD1748A8DA00B23336 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		DA8E54AF1748A8DF00B23336 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		DA8E550B17574F2300B23336 /* TStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TStoryboard.storyboard; sourceTree = "<group>"; };
+		DA8E55591757575F00B23336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA8E555E17575D0300B23336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
+		DA8E556317577EF100B23336 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Storyboard.strings"; sourceTree = "<group>"; };
+		DA8E556417577EF100B23336 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DA9C265817087E1A00F94B0D /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		DA9C265A1708835400F94B0D /* alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm2.mp3; sourceTree = "<group>"; };
+		DA9C265C1709422900F94B0D /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		DA9C265E17095DC500F94B0D /* RGTomatoSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTomatoSettingController.h; sourceTree = "<group>"; };
+		DA9C265F17095DC500F94B0D /* RGTomatoSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTomatoSettingController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA8C697F16FF08A10000F2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3A8968170AE13D007D0004 /* AVFoundation.framework in Frameworks */,
+				DA3A8966170AE00D007D0004 /* AudioToolbox.framework in Frameworks */,
+				DA8C698616FF08A10000F2BF /* UIKit.framework in Frameworks */,
+				DA8C698816FF08A10000F2BF /* Foundation.framework in Frameworks */,
+				DA8C698A16FF08A10000F2BF /* CoreGraphics.framework in Frameworks */,
+				DA8C698C16FF08A10000F2BF /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA3A89EC171D1BB3007D0004 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C69AB16FF11960000F2BF /* RGTodayTableViewController.h */,
+				DA8C69AC16FF11960000F2BF /* RGTodayTableViewController.m */,
+				DA8BEF4B16FF45DC00086FC6 /* RGMissionViewController.h */,
+				DA8BEF4C16FF45DC00086FC6 /* RGMissionViewController.m */,
+				DA8BEF4E16FFF4DC00086FC6 /* RGAddMissionViewController.h */,
+				DA8BEF4F16FFF4DC00086FC6 /* RGAddMissionViewController.m */,
+				DA806B331701576B00B3BB1E /* RGHistoryViewController.h */,
+				DA806B341701576B00B3BB1E /* RGHistoryViewController.m */,
+				DA806B451708035200B3BB1E /* RGTimerController.h */,
+				DA806B461708035300B3BB1E /* RGTimerController.m */,
+				DA9C265E17095DC500F94B0D /* RGTomatoSettingController.h */,
+				DA9C265F17095DC500F94B0D /* RGTomatoSettingController.m */,
+				DA3A89EF171D1C8A007D0004 /* RGMemoListController.h */,
+				DA3A89F0171D1C8A007D0004 /* RGMemoListController.m */,
+				DA3A89FD171D9962007D0004 /* RGMemoController.h */,
+				DA3A89FE171D9962007D0004 /* RGMemoController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		DA3A89ED171D1C09007D0004 /* pic */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E549C1747A8EE00B23336 /* Icon.png */,
+				DA8E549D1747A8EE00B23336 /* Icon@2x.png */,
+				DA8BEF5116FFFC0900086FC6 /* deleteButton.png */,
+				DA3A8A1017202CB5007D0004 /* speech_bubble@2x.png */,
+				DA3A8A0E17202C95007D0004 /* speech_bubble.png */,
+				DA3A8963170AB03E007D0004 /* graph_bar.png */,
+				DA3A8961170AB025007D0004 /* graph_bar@2x.png */,
+				DA8BEF5517002DCE00086FC6 /* pencil@2x.png */,
+				DA8BEF5317002DB500086FC6 /* pencil.png */,
+			);
+			name = pic;
+			sourceTree = "<group>";
+		};
+		DA3A89EE171D1C28007D0004 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				DA9C265A1708835400F94B0D /* alarm2.mp3 */,
+				DA9C265817087E1A00F94B0D /* alarm.mp3 */,
+			);
+			name = mp3;
+			sourceTree = "<group>";
+		};
+		DA3A89FB171D6716007D0004 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C69A916FF11960000F2BF /* RGMissionViewCell.h */,
+				DA8C69AA16FF11960000F2BF /* RGMissionViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		DA3A8A03171E8A50007D0004 /* mediator */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A8A00171DB236007D0004 /* RGMemoMediator.h */,
+				DA3A8A01171DB236007D0004 /* RGMemoMediator.m */,
+				DA3A8A05171E8B6D007D0004 /* RGMissionMediator.h */,
+				DA3A8A06171E8B6E007D0004 /* RGMissionMediator.m */,
+			);
+			name = mediator;
+			sourceTree = "<group>";
+		};
+		DA3A8A04171E8AFD007D0004 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DA806B3F170572B400B3BB1E /* Date.h */,
+				DA806B40170572B400B3BB1E /* Date.m */,
+				DA806B42170572B500B3BB1E /* Mission.h */,
+				DA806B43170572B500B3BB1E /* Mission.m */,
+				DA3A89F8171D5EDA007D0004 /* Memo.h */,
+				DA3A89F9171D5EDB007D0004 /* Memo.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		DA3A8D4D17253ED6007D0004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E54AF1748A8DF00B23336 /* Default.png */,
+				DA8E54AD1748A8DA00B23336 /* Default@2x.png */,
+				DA8E54AB1748A81D00B23336 /* Default-568h@2x.png */,
+				DA3A89EE171D1C28007D0004 /* mp3 */,
+				DA3A89ED171D1C09007D0004 /* pic */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DA8C697916FF08A10000F2BF = {
+			isa = PBXGroup;
+			children = (
+				DA8E54A21747A90200B23336 /* Icon@2x.png */,
+				DA8E54A01747A8FC00B23336 /* Icon.png */,
+				DA8C698D16FF08A10000F2BF /* Tomatos */,
+				DA8C698416FF08A10000F2BF /* Frameworks */,
+				DA8C698316FF08A10000F2BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA8C698316FF08A10000F2BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C698216FF08A10000F2BF /* Tomatos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA8C698416FF08A10000F2BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A8967170AE13D007D0004 /* AVFoundation.framework */,
+				DA3A8965170AE00D007D0004 /* AudioToolbox.framework */,
+				DA8C698516FF08A10000F2BF /* UIKit.framework */,
+				DA8C698716FF08A10000F2BF /* Foundation.framework */,
+				DA8C698916FF08A10000F2BF /* CoreGraphics.framework */,
+				DA8C698B16FF08A10000F2BF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA8C698D16FF08A10000F2BF /* Tomatos */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E556217577A3D00B23336 /* Code */,
+				DA3A8D4D17253ED6007D0004 /* Resources */,
+				DA3A8A0A17202B4C007D0004 /* Tomatos.xcdatamodeld */,
+				DA8C698E16FF08A10000F2BF /* Supporting Files */,
+				DA8E550B17574F2300B23336 /* TStoryboard.storyboard */,
+			);
+			path = Tomatos;
+			sourceTree = "<group>";
+		};
+		DA8C698E16FF08A10000F2BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E555B1757577600B23336 /* Storyboard.storyboard */,
+				DA8E55581757575F00B23336 /* InfoPlist.strings */,
+				DA8C698F16FF08A10000F2BF /* Tomatos-Info.plist */,
+				DA8C699316FF08A10000F2BF /* main.m */,
+				DA8C699516FF08A10000F2BF /* Tomatos-Prefix.pch */,
+				DA8C699916FF08A20000F2BF /* Default.png */,
+				DA8C699B16FF08A20000F2BF /* Default@2x.png */,
+				DA8C699D16FF08A20000F2BF /* Default-568h@2x.png */,
+				DA9C265C1709422900F94B0D /* setting.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA8E556217577A3D00B23336 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C699616FF08A10000F2BF /* RGAppDelegate.h */,
+				DA8C699716FF08A20000F2BF /* RGAppDelegate.m */,
+				DA806B361701592A00B3BB1E /* RGDataCenter.h */,
+				DA806B371701592A00B3BB1E /* RGDataCenter.m */,
+				DA3A89981712A214007D0004 /* RGAssistant.h */,
+				DA3A89991712A214007D0004 /* RGAssistant.m */,
+				DA3A89FC171D6785007D0004 /* RGConstant.h */,
+				DA3A89EC171D1BB3007D0004 /* viewControllers */,
+				DA3A89FB171D6716007D0004 /* cell */,
+				DA3A8A03171E8A50007D0004 /* mediator */,
+				DA3A8A04171E8AFD007D0004 /* model */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA8C698116FF08A10000F2BF /* Tomatos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8C69A416FF08A20000F2BF /* Build configuration list for PBXNativeTarget "Tomatos" */;
+			buildPhases = (
+				DA8C697E16FF08A10000F2BF /* Sources */,
+				DA8C697F16FF08A10000F2BF /* Frameworks */,
+				DA8C698016FF08A10000F2BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tomatos;
+			productName = Tomatos;
+			productReference = DA8C698216FF08A10000F2BF /* Tomatos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA8C697A16FF08A10000F2BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RG;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Zero;
+			};
+			buildConfigurationList = DA8C697D16FF08A10000F2BF /* Build configuration list for PBXProject "Tomatos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = DA8C697916FF08A10000F2BF;
+			productRefGroup = DA8C698316FF08A10000F2BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA8C698116FF08A10000F2BF /* Tomatos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA8C698016FF08A10000F2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8C699A16FF08A20000F2BF /* Default.png in Resources */,
+				DA8C699C16FF08A20000F2BF /* Default@2x.png in Resources */,
+				DA8C699E16FF08A20000F2BF /* Default-568h@2x.png in Resources */,
+				DA8BEF5216FFFC0900086FC6 /* deleteButton.png in Resources */,
+				DA8BEF5417002DB600086FC6 /* pencil.png in Resources */,
+				DA8BEF5617002DCE00086FC6 /* pencil@2x.png in Resources */,
+				DA9C265917087E1A00F94B0D /* alarm.mp3 in Resources */,
+				DA9C265B1708835400F94B0D /* alarm2.mp3 in Resources */,
+				DA9C265D1709422900F94B0D /* setting.plist in Resources */,
+				DA3A8962170AB025007D0004 /* graph_bar@2x.png in Resources */,
+				DA3A8964170AB03E007D0004 /* graph_bar.png in Resources */,
+				DA3A8A0F17202C95007D0004 /* speech_bubble.png in Resources */,
+				DA3A8A1117202CB5007D0004 /* speech_bubble@2x.png in Resources */,
+				DA8E549E1747A8EE00B23336 /* Icon.png in Resources */,
+				DA8E549F1747A8EE00B23336 /* Icon@2x.png in Resources */,
+				DA8E550C17574F2300B23336 /* TStoryboard.storyboard in Resources */,
+				DA8E555A1757575F00B23336 /* InfoPlist.strings in Resources */,
+				DA8E555D1757577600B23336 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA8C697E16FF08A10000F2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8C699416FF08A10000F2BF /* main.m in Sources */,
+				DA8C699816FF08A20000F2BF /* RGAppDelegate.m in Sources */,
+				DA8C69B016FF11960000F2BF /* RGMissionViewCell.m in Sources */,
+				DA8C69B116FF11960000F2BF /* RGTodayTableViewController.m in Sources */,
+				DA8BEF4D16FF45DC00086FC6 /* RGMissionViewController.m in Sources */,
+				DA8BEF5016FFF4DC00086FC6 /* RGAddMissionViewController.m in Sources */,
+				DA806B351701576B00B3BB1E /* RGHistoryViewController.m in Sources */,
+				DA806B381701592A00B3BB1E /* RGDataCenter.m in Sources */,
+				DA806B41170572B500B3BB1E /* Date.m in Sources */,
+				DA806B44170572B500B3BB1E /* Mission.m in Sources */,
+				DA806B471708035300B3BB1E /* RGTimerController.m in Sources */,
+				DA9C266017095DC500F94B0D /* RGTomatoSettingController.m in Sources */,
+				DA3A899A1712A215007D0004 /* RGAssistant.m in Sources */,
+				DA3A89F1171D1C8A007D0004 /* RGMemoListController.m in Sources */,
+				DA3A89FA171D5EDB007D0004 /* Memo.m in Sources */,
+				DA3A89FF171D9962007D0004 /* RGMemoController.m in Sources */,
+				DA3A8A02171DB238007D0004 /* RGMemoMediator.m in Sources */,
+				DA3A8A07171E8B6E007D0004 /* RGMissionMediator.m in Sources */,
+				DA3A8A0D17202B4C007D0004 /* Tomatos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA8E55581757575F00B23336 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8E55591757575F00B23336 /* en */,
+				DA8E556417577EF100B23336 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA8E555B1757577600B23336 /* Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8E555E17575D0300B23336 /* Base */,
+				DA8E556317577EF100B23336 /* zh-Hans */,
+			);
+			name = Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA8C69A216FF08A20000F2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lin Lin (BQMQEKUC5Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "EE736F14-D87C-4618-BB2C-4C5B02B4249A";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA8C69A316FF08A20000F2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lin Lin (BQMQEKUC5Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "EE736F14-D87C-4618-BB2C-4C5B02B4249A";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA8C69A516FF08A20000F2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomatos/Tomatos-Prefix.pch";
+				INFOPLIST_FILE = "Tomatos/Tomatos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA8C69A616FF08A20000F2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomatos/Tomatos-Prefix.pch";
+				INFOPLIST_FILE = "Tomatos/Tomatos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA8C697D16FF08A10000F2BF /* Build configuration list for PBXProject "Tomatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8C69A216FF08A20000F2BF /* Debug */,
+				DA8C69A316FF08A20000F2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8C69A416FF08A20000F2BF /* Build configuration list for PBXNativeTarget "Tomatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8C69A516FF08A20000F2BF /* Debug */,
+				DA8C69A616FF08A20000F2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA3A8A0A17202B4C007D0004 /* Tomatos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA3A8A0B17202B4C007D0004 /* Tomatos.xcdatamodel */,
+				DA3A8A0C17202B4C007D0004 /* Tomatos1.0.xcdatamodel */,
+			);
+			currentVersion = DA3A8A0C17202B4C007D0004 /* Tomatos1.0.xcdatamodel */;
+			path = Tomatos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA8C697A16FF08A10000F2BF /* Project object */;
+}

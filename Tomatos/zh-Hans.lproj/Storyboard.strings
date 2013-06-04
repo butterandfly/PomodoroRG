@@ -1,0 +1,189 @@
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "0Re-Ft-h9j"; */
+"0Re-Ft-h9j.title" = "取消";
+
+/* Class = "IBUILabel"; text = "Description"; ObjectID = "1Bq-cQ-g1d"; */
+"1Bq-cQ-g1d.text" = "Description";
+
+/* Class = "IBUILabel"; text = "已完成0个番茄"; ObjectID = "2rY-XO-vOH"; */
+"2rY-XO-vOH.text" = "已完成0个番茄";
+
+/* Class = "IBUILabel"; text = "1"; ObjectID = "4ve-TH-kGT"; */
+"4ve-TH-kGT.text" = "1";
+
+/* Class = "IBUITableViewSection"; headerTitle = "目标番茄数"; ObjectID = "5fB-Dn-jl2"; */
+"5fB-Dn-jl2.headerTitle" = "目标番茄数";
+
+/* Class = "IBUITableViewSection"; footerTitle = "＊为保持注意力集中，番茄时间不宜过长，建议在30分钟以内"; ObjectID = "5sT-1V-out"; */
+"5sT-1V-out.footerTitle" = "＊为保持注意力集中，番茄时间不宜过长，建议在30分钟以内";
+
+/* Class = "IBUITableViewSection"; headerTitle = "番茄时间"; ObjectID = "5sT-1V-out"; */
+"5sT-1V-out.headerTitle" = "番茄时间";
+
+/* Class = "IBUITabBarItem"; title = "历史"; ObjectID = "7CC-mU-3iX"; */
+"7CC-mU-3iX.title" = "历史";
+
+/* Class = "IBUITabBarItem"; title = "Memo"; ObjectID = "8jh-Vu-n6d"; */
+"8jh-Vu-n6d.title" = "Memo";
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "8x5-oa-f4V"; */
+"8x5-oa-f4V.title" = "取消";
+
+/* Class = "IBUILabel"; text = "删除任务"; ObjectID = "9k2-IA-fBr"; */
+"9k2-IA-fBr.text" = "删除任务";
+
+/* Class = "IBUITableViewSection"; footerTitle = "＊尽量细化任务，使描述在一句话以内"; ObjectID = "C1x-Fz-4kw"; */
+"C1x-Fz-4kw.footerTitle" = "＊尽量细化任务，使描述在一句话以内";
+
+/* Class = "IBUITableViewSection"; headerTitle = "任务描述"; ObjectID = "C1x-Fz-4kw"; */
+"C1x-Fz-4kw.headerTitle" = "任务描述";
+
+/* Class = "IBUITableViewSection"; headerTitle = "目标番茄数"; ObjectID = "Ern-oX-8XC"; */
+"Ern-oX-8XC.headerTitle" = "目标番茄数";
+
+/* Class = "IBUITableViewSection"; footerTitle = "＊尽量细化任务，使目标数小于4"; ObjectID = "Err-lE-CW7"; */
+"Err-lE-CW7.footerTitle" = "＊尽量细化任务，使目标数小于4";
+
+/* Class = "IBUITableViewSection"; headerTitle = "目标番茄数"; ObjectID = "Err-lE-CW7"; */
+"Err-lE-CW7.headerTitle" = "目标番茄数";
+
+/* Class = "IBUIBarButtonItem"; title = "添加任务"; ObjectID = "GDT-Co-887"; */
+"GDT-Co-887.title" = "添加任务";
+
+/* Class = "IBUILabel"; text = "25:00"; ObjectID = "IlY-XX-FW9"; */
+"IlY-XX-FW9.text" = "25:00";
+
+/* Class = "IBUILabel"; text = "开始蕃茄计时器"; ObjectID = "J3d-bR-AZw"; */
+"J3d-bR-AZw.text" = "开始蕃茄计时器";
+
+/* Class = "IBUIBarButtonItem"; title = "新的一天"; ObjectID = "JQn-cK-g9O"; */
+"JQn-cK-g9O.title" = "新的一天";
+
+/* Class = "IBUILabel"; text = "3/4"; ObjectID = "OVy-SO-Kug"; */
+"OVy-SO-Kug.text" = "3/4";
+
+/* Class = "IBUILabel"; text = "25（分钟）"; ObjectID = "P4T-3F-RFT"; */
+"P4T-3F-RFT.text" = "25（分钟）";
+
+/* Class = "IBUITableViewSection"; footerTitle = "＊若中断次数过多，应考虑更改工作时间或地点"; ObjectID = "Pv8-az-4uR"; */
+"Pv8-az-4uR.footerTitle" = "＊若中断次数过多，应考虑更改工作时间或地点";
+
+/* Class = "IBUITableViewSection"; headerTitle = "番茄中断次数"; ObjectID = "Pv8-az-4uR"; */
+"Pv8-az-4uR.headerTitle" = "番茄中断次数";
+
+/* Class = "IBUINavigationItem"; title = "今日任务"; ObjectID = "QmX-Co-Hmq"; */
+"QmX-Co-Hmq.title" = "今日任务";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "Qqi-Qo-Ohh"; */
+"Qqi-Qo-Ohh.text" = "0";
+
+/* Class = "IBUINavigationItem"; title = "添加任务"; ObjectID = "Qzd-71-jSe"; */
+"Qzd-71-jSe.title" = "添加任务";
+
+/* Class = "IBUIBarButtonItem"; title = "完成"; ObjectID = "S4G-gM-cz9"; */
+"S4G-gM-cz9.title" = "完成";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "SWw-dn-9UT"; */
+"SWw-dn-9UT.text" = "0";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "WVo-SO-VDe"; */
+"WVo-SO-VDe.text" = "0";
+
+/* Class = "IBUINavigationItem"; title = "历史"; ObjectID = "X01-Gr-p43"; */
+"X01-Gr-p43.title" = "历史";
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "X84-Yo-GKq"; */
+"X84-Yo-GKq.title" = "取消";
+
+/* Class = "IBUIBarButtonItem"; title = "设置"; ObjectID = "Y4D-cE-1lb"; */
+"Y4D-cE-1lb.title" = "设置";
+
+/* Class = "IBUIBarButtonItem"; title = "Save"; ObjectID = "Yia-J1-erp"; */
+"Yia-J1-erp.title" = "Save";
+
+/* Class = "IBUINavigationItem"; title = "番茄计时器"; ObjectID = "bDV-mm-hK2"; */
+"bDV-mm-hK2.title" = "番茄计时器";
+
+/* Class = "IBUINavigationItem"; title = "日期"; ObjectID = "bdU-cc-Dnk"; */
+"bdU-cc-Dnk.title" = "日期";
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "dEX-Cd-2A0"; */
+"dEX-Cd-2A0.title" = "取消";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "dGD-Li-sPV"; */
+"dGD-Li-sPV.text" = "0";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "ece-zY-fX0"; */
+"ece-zY-fX0.title" = "Item";
+
+/* Class = "IBUIBarButtonItem"; title = "取消"; ObjectID = "imD-xy-4Cq"; */
+"imD-xy-4Cq.title" = "取消";
+
+/* Class = "IBUINavigationItem"; title = "查看任务"; ObjectID = "j9v-Fk-Xnh"; */
+"j9v-Fk-Xnh.title" = "查看任务";
+
+/* Class = "IBUINavigationItem"; title = "备忘清单"; ObjectID = "jcK-xL-yTm"; */
+"jcK-xL-yTm.title" = "备忘清单";
+
+/* Class = "IBUILabel"; text = "该任务已完成"; ObjectID = "kO7-ji-m6G"; */
+"kO7-ji-m6G.text" = "该任务已完成";
+
+/* Class = "IBUINavigationItem"; title = "编辑任务"; ObjectID = "kOh-7S-PcE"; */
+"kOh-7S-PcE.title" = "编辑任务";
+
+/* Class = "IBUITableViewSection"; headerTitle = "番茄中断数"; ObjectID = "mRY-RS-ShA"; */
+"mRY-RS-ShA.headerTitle" = "番茄中断数";
+
+/* Class = "IBUILabel"; text = "已完成"; ObjectID = "mWR-8U-HVg"; */
+"mWR-8U-HVg.text" = "已完成";
+
+/* Class = "IBUITableViewSection"; headerTitle = "任务描述"; ObjectID = "mzl-sv-95O"; */
+"mzl-sv-95O.headerTitle" = "任务描述";
+
+/* Class = "IBUILabel"; text = "Description"; ObjectID = "nWO-48-65w"; */
+"nWO-48-65w.text" = "Description";
+
+/* Class = "IBUINavigationItem"; title = "备忘详情"; ObjectID = "nww-fd-3M4"; */
+"nww-fd-3M4.title" = "备忘详情";
+
+/* Class = "IBUITableViewSection"; headerTitle = "任务描述"; ObjectID = "ofc-Ix-KOp"; */
+"ofc-Ix-KOp.headerTitle" = "任务描述";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "omd-e1-fz6"; */
+"omd-e1-fz6.title" = "返回";
+
+/* Class = "IBUITabBarItem"; badgeValue = "0"; ObjectID = "q7H-QS-Ygm"; */
+"q7H-QS-Ygm.badgeValue" = "0";
+
+/* Class = "IBUITabBarItem"; title = "当日任务"; ObjectID = "q7H-QS-Ygm"; */
+"q7H-QS-Ygm.title" = "当日任务";
+
+/* Class = "IBUIButton"; normalTitle = "中断"; ObjectID = "qIB-I4-6eN"; */
+"qIB-I4-6eN.normalTitle" = "中断";
+
+/* Class = "IBUILabel"; text = "1"; ObjectID = "sLb-Pj-9JW"; */
+"sLb-Pj-9JW.text" = "1";
+
+/* Class = "IBUIBarButtonItem"; title = "确认修改"; ObjectID = "stN-dm-eSZ"; */
+"stN-dm-eSZ.title" = "确认修改";
+
+/* Class = "IBUITableViewSection"; headerTitle = "实际完成番茄数"; ObjectID = "tq2-IT-nAn"; */
+"tq2-IT-nAn.headerTitle" = "实际完成番茄数";
+
+/* Class = "IBUITableViewSection"; headerTitle = "实际完成番茄数"; ObjectID = "uf7-RP-A3p"; */
+"uf7-RP-A3p.headerTitle" = "实际完成番茄数";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "uj6-im-3Fd"; */
+"uj6-im-3Fd.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "vIg-lN-BaT"; */
+"vIg-lN-BaT.text" = "Title";
+
+/* Class = "IBUILabel"; text = "13/14"; ObjectID = "vUz-8J-aF9"; */
+"vUz-8J-aF9.text" = "13/14";
+
+/* Class = "IBUIBarButtonItem"; title = "新增"; ObjectID = "xRH-3h-CIa"; */
+"xRH-3h-CIa.title" = "新增";
+
+/* Class = "IBUILabel"; text = "1"; ObjectID = "xg6-6L-PCF"; */
+"xg6-6L-PCF.text" = "1";
