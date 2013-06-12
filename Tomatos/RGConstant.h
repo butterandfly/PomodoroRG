@@ -16,4 +16,6 @@ typedef enum {
     kActionTagCheck
 } ActionTag;
 
+#define kUserDefaultsTomatoTime @"tomatoMin"
+
 #endif

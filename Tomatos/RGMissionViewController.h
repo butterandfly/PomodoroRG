@@ -35,11 +35,6 @@ typedef enum {
 
 @property (weak, nonatomic) RGTodayTableViewController *missionListDelegate;
 @property (strong, nonatomic) Mission *currentMission;
-//@property (assign, nonatomic) BOOL isCheckOnly;
 @property (assign, nonatomic) NSInteger actionMode;
-
-// edit mission view only
-//- (void)interruptPlusOne;
-//- (void)currentPlusOne;
 
 @end

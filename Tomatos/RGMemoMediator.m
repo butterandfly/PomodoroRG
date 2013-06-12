@@ -8,13 +8,14 @@
 
 #import "RGMemoMediator.h"
 #import "RGConstant.h"
-#import "RGDataCenter.h"
+//#import "RGDataCenter.h"
 #import "Memo.h"
 #import "RGMemoListController.h"
 #import "RGMemoController.h"
+#import "RGMemoDataCenter.h"
 
 @interface RGMemoMediator () {
-    __weak RGDataCenter *_dataCenter;
+    __weak RGMemoDataCenter *_memoDataCenter;
 }
 
 // * Private functions.
@@ -29,7 +30,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _dataCenter = [RGDataCenter sharedDataCenter];
+//        _memoDataCenter = [RGMemoDataCenter sharedCenter];
+        _memoDataCenter = [RGMemoDataCenter sharedRGMemoDataCenter];
     }
     return self;
 }
@@ -43,7 +45,7 @@
         // * Save data.
         Memo *memo = self.memoController.currentMemo;
         memo.info = self.memoController.memoTextView.text;
-        [_dataCenter save];
+        [_memoDataCenter save];
         
         // * Flesh list view.
         NSInteger row = [self.listController.memoArray indexOfObject:memo];
@@ -69,7 +71,7 @@
     // * Create a new memo.
     if (actionTag == kActionTagAdd) {
         // Create.
-        Memo *memo = [_dataCenter addMemoWithInfo:self.memoController.memoTextView.text];
+        Memo *memo = [_memoDataCenter addMemoWithInfo:self.memoController.memoTextView.text];
         // Add to the array of listController.
         [self.listController.memoArray insertObject:memo atIndex:0];
         // Reflash the table view
@@ -89,7 +91,7 @@
         [self.listController.memoArray removeObject:memo];
         [self.listController.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:idxPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         // Update dataCenter.
-        [_dataCenter deleteDataObject:memo];
+        [_memoDataCenter deleteDataObject:memo];
         // Get out of here.
         [self popView];
     }

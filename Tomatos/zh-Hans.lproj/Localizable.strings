@@ -1,0 +1,22 @@
+/* Localized versions of Info.plist keys */
+
+// ***** RGTomatoSettingController *****
+"MINUTE" = "%d（分钟）";
+
+// ----- RGTodayTableViewController ----
+//"CurrentDayOnlyTip" = "You can only create the list of current day";
+"CurrentDayOnlyTip" = "你只能创建今天的任务列表";
+//"OK" = "OK";
+"OK" = "好的";
+//"CANCEL" = "Cancel";
+"CANCEL" = "取消";
+//"NEWDAYTIP" = "This list is overdue, create a new day?";
+"NEWDAYTIP" = "当前列表已过期，要创建新的一天吗";
+//"FINISHEDTIP" = "%d tomatos have been finished";
+"FINISHEDCOUNTTIP" = "已完成%d个番茄";
+
+// ----- RGMissionController -----
+//"DONETIP" = "This mission is done";
+"DONETIP" = "该任务已完成";
+//"NOTDONETIP" = "This mission is not done";
+"NOTDONETIP" = "该任务未完成";

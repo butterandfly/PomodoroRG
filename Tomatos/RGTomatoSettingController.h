@@ -17,7 +17,6 @@
 @property (assign, nonatomic) NSInteger tomatoMin;
 @property (weak) RGTimerController *tomatoController;
 
-// We use a stepper to set the tomato time.
 - (IBAction)minStep:(UIStepper *)sender;
 // Right button of nav bar's action.
 - (IBAction)edit:(id)sender;

@@ -7,6 +7,7 @@
 //
 
 #import "RGTomatoSettingController.h"
+#import "RGAppUserDefaults.h"
 
 @interface RGTomatoSettingController ()
 
@@ -18,22 +19,10 @@
 {
     [super viewDidLoad];
     
-    // Get tomato min from NSUserDefaults.
-    NSInteger tMin = [[NSUserDefaults standardUserDefaults] integerForKey:@"tomatoMin"];
-    // * No-exist situation.
-    if (tMin == 0) {
-        // Read the default settings from the plist.
-        NSString *settingFile = [[NSBundle mainBundle] pathForResource:@"setting" ofType:@"plist"];
-        NSDictionary *settingDict = [NSDictionary dictionaryWithContentsOfFile:settingFile];
-        tMin = [[settingDict objectForKey:@"tomatoMin"] integerValue];
-        // Set it.
-        [[NSUserDefaults standardUserDefaults] setInteger:self.tomatoMin forKey:@"tomatoMin"];
-    }
-    
-    self.tomatoMin = tMin;
+    self.tomatoMin = [RGAppUserDefaults tomatoTime];
     // Set up UI content.
     self.minStepper.value = (double)self.tomatoMin;
-    self.minLabel.text = [NSString stringWithFormat:@"%d（分钟）", self.tomatoMin];
+    self.minLabel.text = [NSString stringWithFormat:NSLocalizedString(@"MINUTE", nil), self.tomatoMin];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,8 +44,7 @@
 }
 
 - (IBAction)edit:(id)sender {
-    // Config the user defaults.
-    [[NSUserDefaults standardUserDefaults] setInteger:self.tomatoMin forKey:@"tomatoMin"];
+    [RGAppUserDefaults setTomatoTime:self.tomatoMin];
     [[self navigationController] popViewControllerAnimated:YES];
 }
 @end

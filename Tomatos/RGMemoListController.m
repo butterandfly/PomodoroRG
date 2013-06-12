@@ -8,10 +8,11 @@
 
 #import "RGMemoListController.h"
 #import "RGConstant.h"
-#import "RGDataCenter.h"
+//#import "RGDataCenter.h"
+#import "RGMemoDataCenter.h"
 
 @interface RGMemoListController () {
-    __weak RGDataCenter *_dataCenter;
+    __weak RGMemoDataCenter *_memoDataCenter;
 }
 
 @end
@@ -22,9 +23,10 @@
 {
     [super viewDidLoad];
 
-    _dataCenter = [RGDataCenter sharedDataCenter];
-    // Set up memo list.
-    self.memoArray = [NSMutableArray arrayWithArray:_dataCenter.allMemo];
+    _memoDataCenter = [RGMemoDataCenter sharedRGMemoDataCenter];
+    
+    [_memoDataCenter allMemo];
+    self.memoArray = [NSMutableArray arrayWithArray:[_memoDataCenter allMemo]];
 }
 
 - (void)didReceiveMemoryWarning

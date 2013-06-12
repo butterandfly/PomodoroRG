@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RGDataCenter.h"
+//#import "RGDataCenter.h"
+#import "Mission.h"
 
 @class RGMissionViewController;
 @class RGTodayTableViewController;
@@ -16,7 +17,7 @@
 @interface RGMissionMediator : NSObject
 
 // Weak reference to data center, it can be private.
-@property (weak, nonatomic) RGDataCenter *dataCenter;
+//@property (weak, nonatomic) RGDataCenter *dataCenter;
 // Weak reference to mission controller and mission list controller.
 @property (weak, nonatomic) RGMissionViewController *missionController;
 @property (weak, nonatomic) RGTodayTableViewController *dayController;

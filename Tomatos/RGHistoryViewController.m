@@ -7,10 +7,10 @@
 //
 
 #import "RGHistoryViewController.h"
-#import "RGDataCenter.h"
+#import "RGDateDataCenter.h"
 
 @interface RGHistoryViewController () {
-    __weak RGDataCenter *_dataCenter;
+    __weak RGDateDataCenter *_dateDataCenter;
 }
 
 @end
@@ -21,13 +21,12 @@
 {
     [super viewDidLoad];
 
-    // Set up UI.
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     // Set up history day list.
-    _dataCenter = [RGDataCenter sharedDataCenter];
-    self.dateArray = [_dataCenter allDateExceptNewest];
+    _dateDataCenter = [RGDateDataCenter sharedRGDateDataCenter];
+    self.dateArray = [_dateDataCenter allDateExceptNewest];
+    
     // Observer the countOfAllDate.
-    [_dataCenter addObserver:self forKeyPath:@"countOfAllDate" options:NSKeyValueObservingOptionNew context:NULL];
+    [_dateDataCenter addObserver:self forKeyPath:@"countOfAllDate" options:NSKeyValueObservingOptionNew context:NULL];
     
 }
 
@@ -37,12 +36,13 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIViewController *des = segue.destinationViewController;
+    
     // Push to the RGDayController.
     if ([segue.identifier isEqualToString:@"CheckADay"]) {
         // Get the selected day
         NSInteger row = [[self.tableView indexPathForCell:sender] row];
-        UIViewController *des = segue.destinationViewController;
-        // Set the date, and inHistory mode.
+        
         [des setValue:self.dateArray[row] forKey:@"currentDay"];
         [des setValue:[NSNumber numberWithBool:YES] forKey:@"inHistory"];
     }
@@ -84,7 +84,8 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     // Observe the countOfAllDate.
     if ([keyPath isEqualToString:@"countOfAllDate"]) {
-        self.dateArray = [_dataCenter allDateExceptNewest];
+//        self.dateArray = [_dataCenter allDateExceptNewest];
+        self.dateArray = [_dateDataCenter allDateExceptNewest];
         [self.tableView reloadData];
     }
 }

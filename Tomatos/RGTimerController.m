@@ -9,6 +9,7 @@
 #import "RGTimerController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioServices.h>
+#import "RGAppUserDefaults.h"
 
 #define SEC_PER_MIN 60
 
@@ -32,6 +33,7 @@
 - (void)setupTimeLabel:(double)timeInfo;
 - (void)start;
 - (void)releaseAllStuff;
+- (void)setupAlarmMusic;
 
 @end
 
@@ -41,27 +43,12 @@
 {
     [super viewDidLoad];
     
-    // Get tomata time in NSUserDefaults.
-    NSInteger tMin = [[NSUserDefaults standardUserDefaults] integerForKey:@"tomatoMin"];
-    // * Situation of first time running.
-    if (tMin == 0) {
-        // Get init settings from plist.
-        NSString *settingFile = [[NSBundle mainBundle] pathForResource:@"setting" ofType:@"plist"];
-        NSDictionary *settingDict = [NSDictionary dictionaryWithContentsOfFile:settingFile];
-        tMin = [[settingDict objectForKey:@"tomatoMin"] integerValue];
-        // Set setting to NSUserDefaults.
-        [[NSUserDefaults standardUserDefaults] setInteger:self.tomatoMin forKey:@"tomatoMin"];
-    }
-    
-    [self setupTomatoMin:tMin];
+    [self setupTomatoMin:[RGAppUserDefaults tomatoTime]];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignActive) name:UIApplicationWillResignActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
     
-    // music thing
-    NSURL *musicUrl = [[NSBundle mainBundle] URLForResource:@"alarm2" withExtension:@"mp3"];
-    _musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicUrl error:nil];
-    [_musicPlayer setVolume:1.0];
+    [self setupAlarmMusic];
     
     // start
     [self start];
@@ -227,6 +214,12 @@
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     // Remove observer.
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setupAlarmMusic {
+    NSURL *musicUrl = [[NSBundle mainBundle] URLForResource:@"alarm2" withExtension:@"mp3"];
+    _musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicUrl error:nil];
+    [_musicPlayer setVolume:1.0];
 }
 
 #pragma mark - alert view delegate

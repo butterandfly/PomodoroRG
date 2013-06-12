@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RGDataCenter.h"
 
 @interface RGAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,8 +15,6 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-@property (strong) RGDataCenter *dataCenter;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

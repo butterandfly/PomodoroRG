@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA062B62176758F20028091D /* RGMissions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA062B61176758F20028091D /* RGMissions.m */; };
 		DA3A8962170AB025007D0004 /* graph_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8961170AB025007D0004 /* graph_bar@2x.png */; };
 		DA3A8964170AB03E007D0004 /* graph_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8963170AB03E007D0004 /* graph_bar.png */; };
 		DA3A8966170AE00D007D0004 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3A8965170AE00D007D0004 /* AudioToolbox.framework */; };
@@ -20,8 +21,9 @@
 		DA3A8A0D17202B4C007D0004 /* Tomatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA3A8A0A17202B4C007D0004 /* Tomatos.xcdatamodeld */; };
 		DA3A8A0F17202C95007D0004 /* speech_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8A0E17202C95007D0004 /* speech_bubble.png */; };
 		DA3A8A1117202CB5007D0004 /* speech_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A8A1017202CB5007D0004 /* speech_bubble@2x.png */; };
+		DA677825175F6B0E00189CD6 /* RGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA677824175F6B0E00189CD6 /* RGHelper.m */; };
+		DA677828175F6C2900189CD6 /* RGAppUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DA677827175F6C2900189CD6 /* RGAppUserDefaults.m */; };
 		DA806B351701576B00B3BB1E /* RGHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B341701576B00B3BB1E /* RGHistoryViewController.m */; };
-		DA806B381701592A00B3BB1E /* RGDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B371701592A00B3BB1E /* RGDataCenter.m */; };
 		DA806B41170572B500B3BB1E /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B40170572B400B3BB1E /* Date.m */; };
 		DA806B44170572B500B3BB1E /* Mission.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B43170572B500B3BB1E /* Mission.m */; };
 		DA806B471708035300B3BB1E /* RGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA806B461708035300B3BB1E /* RGTimerController.m */; };
@@ -44,15 +46,22 @@
 		DA8E549E1747A8EE00B23336 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E549C1747A8EE00B23336 /* Icon.png */; };
 		DA8E549F1747A8EE00B23336 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E549D1747A8EE00B23336 /* Icon@2x.png */; };
 		DA8E550C17574F2300B23336 /* TStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E550B17574F2300B23336 /* TStoryboard.storyboard */; };
-		DA8E555A1757575F00B23336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA8E55581757575F00B23336 /* InfoPlist.strings */; };
+		DA8E555A1757575F00B23336 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA8E55581757575F00B23336 /* Localizable.strings */; };
 		DA8E555D1757577600B23336 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E555B1757577600B23336 /* Storyboard.storyboard */; };
 		DA9C265917087E1A00F94B0D /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA9C265817087E1A00F94B0D /* alarm.mp3 */; };
 		DA9C265B1708835400F94B0D /* alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA9C265A1708835400F94B0D /* alarm2.mp3 */; };
 		DA9C265D1709422900F94B0D /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9C265C1709422900F94B0D /* setting.plist */; };
 		DA9C266017095DC500F94B0D /* RGTomatoSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C265F17095DC500F94B0D /* RGTomatoSettingController.m */; };
+		DAE736B1175FF65600E83BBD /* RGTomatoTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE736B0175FF65600E83BBD /* RGTomatoTimer.m */; };
+		DAE736D917614C4600E83BBD /* RGCoreDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE736D817614C4600E83BBD /* RGCoreDataCenter.m */; };
+		DAE736DC17614E1700E83BBD /* RGMemoDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE736DB17614E1700E83BBD /* RGMemoDataCenter.m */; };
+		DAE736E01761B52D00E83BBD /* RGMissionDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE736DF1761B52D00E83BBD /* RGMissionDataCenter.m */; };
+		DAE736E31761B59B00E83BBD /* RGDateDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE736E21761B59B00E83BBD /* RGDateDataCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA062B60176758F10028091D /* RGMissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMissions.h; sourceTree = "<group>"; };
+		DA062B61176758F20028091D /* RGMissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMissions.m; sourceTree = "<group>"; };
 		DA3A8961170AB025007D0004 /* graph_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graph_bar@2x.png"; sourceTree = "<group>"; };
 		DA3A8963170AB03E007D0004 /* graph_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph_bar.png; sourceTree = "<group>"; };
 		DA3A8965170AE00D007D0004 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -74,10 +83,12 @@
 		DA3A8A0C17202B4C007D0004 /* Tomatos1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tomatos1.0.xcdatamodel; sourceTree = "<group>"; };
 		DA3A8A0E17202C95007D0004 /* speech_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech_bubble.png; sourceTree = "<group>"; };
 		DA3A8A1017202CB5007D0004 /* speech_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech_bubble@2x.png"; sourceTree = "<group>"; };
+		DA677823175F6B0E00189CD6 /* RGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGHelper.h; sourceTree = "<group>"; };
+		DA677824175F6B0E00189CD6 /* RGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGHelper.m; sourceTree = "<group>"; };
+		DA677826175F6C2800189CD6 /* RGAppUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAppUserDefaults.h; sourceTree = "<group>"; };
+		DA677827175F6C2900189CD6 /* RGAppUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAppUserDefaults.m; sourceTree = "<group>"; };
 		DA806B331701576B00B3BB1E /* RGHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGHistoryViewController.h; sourceTree = "<group>"; };
 		DA806B341701576B00B3BB1E /* RGHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGHistoryViewController.m; sourceTree = "<group>"; };
-		DA806B361701592A00B3BB1E /* RGDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDataCenter.h; sourceTree = "<group>"; };
-		DA806B371701592A00B3BB1E /* RGDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDataCenter.m; sourceTree = "<group>"; };
 		DA806B3F170572B400B3BB1E /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
 		DA806B40170572B400B3BB1E /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
 		DA806B42170572B500B3BB1E /* Mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mission.h; sourceTree = "<group>"; };
@@ -116,15 +127,26 @@
 		DA8E54AD1748A8DA00B23336 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		DA8E54AF1748A8DF00B23336 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		DA8E550B17574F2300B23336 /* TStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TStoryboard.storyboard; sourceTree = "<group>"; };
-		DA8E55591757575F00B23336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA8E55591757575F00B23336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA8E555E17575D0300B23336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
 		DA8E556317577EF100B23336 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Storyboard.strings"; sourceTree = "<group>"; };
-		DA8E556417577EF100B23336 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DA8E556417577EF100B23336 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DA9C265817087E1A00F94B0D /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		DA9C265A1708835400F94B0D /* alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm2.mp3; sourceTree = "<group>"; };
 		DA9C265C1709422900F94B0D /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
 		DA9C265E17095DC500F94B0D /* RGTomatoSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTomatoSettingController.h; sourceTree = "<group>"; };
 		DA9C265F17095DC500F94B0D /* RGTomatoSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTomatoSettingController.m; sourceTree = "<group>"; };
+		DAE736AF175FF65600E83BBD /* RGTomatoTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTomatoTimer.h; sourceTree = "<group>"; };
+		DAE736B0175FF65600E83BBD /* RGTomatoTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTomatoTimer.m; sourceTree = "<group>"; };
+		DAE736D717614C4600E83BBD /* RGCoreDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCoreDataCenter.h; sourceTree = "<group>"; };
+		DAE736D817614C4600E83BBD /* RGCoreDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCoreDataCenter.m; sourceTree = "<group>"; };
+		DAE736DA17614E1700E83BBD /* RGMemoDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMemoDataCenter.h; sourceTree = "<group>"; };
+		DAE736DB17614E1700E83BBD /* RGMemoDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMemoDataCenter.m; sourceTree = "<group>"; };
+		DAE736DD1761ADE600E83BBD /* RGSingletonTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGSingletonTemplate.h; sourceTree = "<group>"; };
+		DAE736DE1761B52D00E83BBD /* RGMissionDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMissionDataCenter.h; sourceTree = "<group>"; };
+		DAE736DF1761B52D00E83BBD /* RGMissionDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMissionDataCenter.m; sourceTree = "<group>"; };
+		DAE736E11761B59B00E83BBD /* RGDateDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDateDataCenter.h; sourceTree = "<group>"; };
+		DAE736E21761B59B00E83BBD /* RGDateDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDateDataCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,7 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8E555B1757577600B23336 /* Storyboard.storyboard */,
-				DA8E55581757575F00B23336 /* InfoPlist.strings */,
+				DA8E55581757575F00B23336 /* Localizable.strings */,
 				DA8C698F16FF08A10000F2BF /* Tomatos-Info.plist */,
 				DA8C699316FF08A10000F2BF /* main.m */,
 				DA8C699516FF08A10000F2BF /* Tomatos-Prefix.pch */,
@@ -300,19 +322,42 @@
 		DA8E556217577A3D00B23336 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				DAE736D617614BEE00E83BBD /* dataCenter */,
 				DA8C699616FF08A10000F2BF /* RGAppDelegate.h */,
 				DA8C699716FF08A20000F2BF /* RGAppDelegate.m */,
-				DA806B361701592A00B3BB1E /* RGDataCenter.h */,
-				DA806B371701592A00B3BB1E /* RGDataCenter.m */,
 				DA3A89981712A214007D0004 /* RGAssistant.h */,
 				DA3A89991712A214007D0004 /* RGAssistant.m */,
+				DA677823175F6B0E00189CD6 /* RGHelper.h */,
+				DA677824175F6B0E00189CD6 /* RGHelper.m */,
 				DA3A89FC171D6785007D0004 /* RGConstant.h */,
+				DA677826175F6C2800189CD6 /* RGAppUserDefaults.h */,
+				DA677827175F6C2900189CD6 /* RGAppUserDefaults.m */,
+				DAE736AF175FF65600E83BBD /* RGTomatoTimer.h */,
+				DAE736B0175FF65600E83BBD /* RGTomatoTimer.m */,
+				DAE736DD1761ADE600E83BBD /* RGSingletonTemplate.h */,
+				DA062B60176758F10028091D /* RGMissions.h */,
+				DA062B61176758F20028091D /* RGMissions.m */,
 				DA3A89EC171D1BB3007D0004 /* viewControllers */,
 				DA3A89FB171D6716007D0004 /* cell */,
 				DA3A8A03171E8A50007D0004 /* mediator */,
 				DA3A8A04171E8AFD007D0004 /* model */,
 			);
 			name = Code;
+			sourceTree = "<group>";
+		};
+		DAE736D617614BEE00E83BBD /* dataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				DAE736D717614C4600E83BBD /* RGCoreDataCenter.h */,
+				DAE736D817614C4600E83BBD /* RGCoreDataCenter.m */,
+				DAE736DA17614E1700E83BBD /* RGMemoDataCenter.h */,
+				DAE736DB17614E1700E83BBD /* RGMemoDataCenter.m */,
+				DAE736DE1761B52D00E83BBD /* RGMissionDataCenter.h */,
+				DAE736DF1761B52D00E83BBD /* RGMissionDataCenter.m */,
+				DAE736E11761B59B00E83BBD /* RGDateDataCenter.h */,
+				DAE736E21761B59B00E83BBD /* RGDateDataCenter.m */,
+			);
+			name = dataCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,7 +430,7 @@
 				DA8E549E1747A8EE00B23336 /* Icon.png in Resources */,
 				DA8E549F1747A8EE00B23336 /* Icon@2x.png in Resources */,
 				DA8E550C17574F2300B23336 /* TStoryboard.storyboard in Resources */,
-				DA8E555A1757575F00B23336 /* InfoPlist.strings in Resources */,
+				DA8E555A1757575F00B23336 /* Localizable.strings in Resources */,
 				DA8E555D1757577600B23336 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +449,6 @@
 				DA8BEF4D16FF45DC00086FC6 /* RGMissionViewController.m in Sources */,
 				DA8BEF5016FFF4DC00086FC6 /* RGAddMissionViewController.m in Sources */,
 				DA806B351701576B00B3BB1E /* RGHistoryViewController.m in Sources */,
-				DA806B381701592A00B3BB1E /* RGDataCenter.m in Sources */,
 				DA806B41170572B500B3BB1E /* Date.m in Sources */,
 				DA806B44170572B500B3BB1E /* Mission.m in Sources */,
 				DA806B471708035300B3BB1E /* RGTimerController.m in Sources */,
@@ -416,19 +460,27 @@
 				DA3A8A02171DB238007D0004 /* RGMemoMediator.m in Sources */,
 				DA3A8A07171E8B6E007D0004 /* RGMissionMediator.m in Sources */,
 				DA3A8A0D17202B4C007D0004 /* Tomatos.xcdatamodeld in Sources */,
+				DA677825175F6B0E00189CD6 /* RGHelper.m in Sources */,
+				DA677828175F6C2900189CD6 /* RGAppUserDefaults.m in Sources */,
+				DAE736B1175FF65600E83BBD /* RGTomatoTimer.m in Sources */,
+				DAE736D917614C4600E83BBD /* RGCoreDataCenter.m in Sources */,
+				DAE736DC17614E1700E83BBD /* RGMemoDataCenter.m in Sources */,
+				DAE736E01761B52D00E83BBD /* RGMissionDataCenter.m in Sources */,
+				DAE736E31761B59B00E83BBD /* RGDateDataCenter.m in Sources */,
+				DA062B62176758F20028091D /* RGMissions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA8E55581757575F00B23336 /* InfoPlist.strings */ = {
+		DA8E55581757575F00B23336 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA8E55591757575F00B23336 /* en */,
 				DA8E556417577EF100B23336 /* zh-Hans */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		DA8E555B1757577600B23336 /* Storyboard.storyboard */ = {

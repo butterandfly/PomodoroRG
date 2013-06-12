@@ -8,15 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Date.h"
+#import "RGMissions.h"
 
 @interface RGTodayTableViewController : UITableViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *manageObjectContext;
-@property (strong, nonatomic) NSMutableArray *missionArray;
+@property (strong, nonatomic) RGMissions *missions;
 @property (strong, nonatomic) Date *currentDay;
 @property (assign) BOOL inHistory;
-@property (assign, nonatomic) BOOL notFinishedCount;
-@property (strong, nonatomic) NSMutableSet *notFinishedMissions;
 
 - (IBAction)newDay:(id)sender;
 - (void)addMission:(id)sender;

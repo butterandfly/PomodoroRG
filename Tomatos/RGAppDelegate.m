@@ -7,7 +7,7 @@
 //
 
 #import "RGAppDelegate.h"
-#import "RGDataCenter.h"
+//#import "RGDataCenter.h"
 
 @implementation RGAppDelegate
 
@@ -17,12 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // We want a black status bar.
-    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleBlackOpaque];
-    
-    _dataCenter = [RGDataCenter sharedDataCenter];
-    _dataCenter.managedObjectContext = self.managedObjectContext;
-    
     return YES;
 }
 

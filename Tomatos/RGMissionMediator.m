@@ -10,6 +10,13 @@
 #import "RGTodayTableViewController.h"
 #import "RGMissionViewController.h"
 #import "Mission.h"
+#import "RGMissionDataCenter.h"
+
+@interface RGMissionMediator () {
+    __weak RGMissionDataCenter *_missionDataCenter;
+}
+
+@end
 
 @implementation RGMissionMediator
 
@@ -17,7 +24,7 @@
 {
     self = [super init];
     if (self) {
-        self.dataCenter = [RGDataCenter sharedDataCenter];
+        _missionDataCenter = [RGMissionDataCenter sharedRGMissionDataCenter];
     }
     return self;
 }
@@ -47,10 +54,10 @@
     lbl.text = [NSString stringWithFormat:@"%d", (int)sender.value];
     // Save data.
     [self.missionController.currentMission setValue:[NSNumber numberWithDouble:sender.value] forKey:countName];
-    [_dataCenter save];
+    [_missionDataCenter save];
     
     if ([stepperType isEqualToString:@"current"]) {
-        // update cell
+        // Update cell.
         [self updateCurrentCountCell];
     }
 }
@@ -59,30 +66,32 @@
     Mission *currentMission = self.missionController.currentMission;
     // save data
     currentMission.isFinished = [NSNumber numberWithBool:sender.isOn];
-    [_dataCenter save];
+//    [_dataCenter save];
+    [_missionDataCenter save];
     // update data cell
     if ([[currentMission isFinished] boolValue]) {
-        [self.dayController.notFinishedMissions removeObject:currentMission];
+        [self.dayController.missions.notFinishedMissions removeObject:currentMission];
     } else {
-        [self.dayController.notFinishedMissions addObject:currentMission];
+        [self.dayController.missions.notFinishedMissions addObject:currentMission];
     }
-    self.dayController.notFinishedCount = [self.dayController.notFinishedMissions count];
+    self.dayController.missions.notFinishedCount = [self.dayController.missions.notFinishedMissions count];
 }
 
 - (void)deleteMission {
     Mission *mission = self.missionController.currentMission;
     
-    [_dataCenter deleteMission:mission];
+//    [_dataCenter deleteMission:mission];
+    [_missionDataCenter deleteMission:mission];
     
     // get info
     NSInteger section = 0;
-    NSInteger row = [self.dayController.missionArray indexOfObject:mission];
+    NSInteger row = [self.dayController.missions.missionArray indexOfObject:mission];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
     // delete from missionArray
-    [self.dayController.missionArray removeObjectAtIndex:row];
+    [self.dayController.missions.missionArray removeObjectAtIndex:row];
     // delete form notFinishedMissions
-    [self.dayController.notFinishedMissions removeObject:mission];
-    self.dayController.notFinishedCount = [self.dayController.notFinishedMissions count];
+    [self.dayController.missions.notFinishedMissions removeObject:mission];
+    self.dayController.missions.notFinishedCount = [self.dayController.missions.notFinishedMissions count];
     // delete from table view
     [self.dayController.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationNone];
     
@@ -96,14 +105,15 @@
 - (void)updateCellByMission:(Mission *)mission {
     // Update the list controller.
     NSInteger section = 0;
-    NSInteger row = [self.dayController.missionArray indexOfObject:mission];
+    NSInteger row = [self.dayController.missions.missionArray indexOfObject:mission];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
     [self updateCellByIndexPath:indexPath];
 }
 
 - (void)saveDescribtion {
     self.missionController.currentMission.describtion = self.missionController.describtionTextView.text;
-    [_dataCenter save];
+//    [_dataCenter save];
+    [_missionDataCenter save];
 }
 
 - (void)stepperPlusOneByTag:(NSInteger)stepperTag {
@@ -137,7 +147,8 @@
     label.text = [NSString stringWithFormat:@"%d", (int)stepper.value];
     // Save change.
     [self.missionController.currentMission setValue:[NSNumber numberWithDouble:stepper.value] forKey:countName];
-    [_dataCenter save];
+//    [_dataCenter save];
+    [_missionDataCenter save];
     
     if (stepperTag == kStepperCurrent) {
         [self updateCurrentCountCell];
